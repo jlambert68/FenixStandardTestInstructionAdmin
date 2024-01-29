@@ -96,7 +96,7 @@ func Initiate_TestInstructionContainer_FenixStandard_Serial(testInstructionsAndT
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionContainerName_FenixStandard_StandardSerialBaseContainer),
 		PreviousElementUUID:      TestInstructionContainerUUID_FenixStandard_StandardSerialBaseContainer,
 		NextElementUUID:          TestInstructionContainerUUID_FenixStandard_StandardSerialBaseContainer,
-		FirstChildElementUUID:    Bonds.Bond_B11fx_BondUuid,
+		FirstChildElementUUID:    Bonds.Bond_B10_BondUuid,
 		ParentElementUUID:        TestInstructionContainerUUID_FenixStandard_StandardSerialBaseContainer,
 		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TIC,
 		OriginalElementUUID:      TestInstructionContainerUUID_FenixStandard_StandardSerialBaseContainer,

@@ -96,7 +96,7 @@ func Initiate_TestInstructionContainer_FenixStandard_Parallel(testInstructionsAn
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionContainerName_FenixStandard_StandardParallelBaseContainer),
 		PreviousElementUUID:      TestInstructionContainerUUID_FenixStandard_StandardParallelBaseContainer,
 		NextElementUUID:          TestInstructionContainerUUID_FenixStandard_StandardParallelBaseContainer,
-		FirstChildElementUUID:    Bonds.Bond_B11fx_BondUuid,
+		FirstChildElementUUID:    Bonds.Bond_B10_BondUuid,
 		ParentElementUUID:        TestInstructionContainerUUID_FenixStandard_StandardParallelBaseContainer,
 		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TIC,
 		OriginalElementUUID:      TestInstructionContainerUUID_FenixStandard_StandardParallelBaseContainer,
