@@ -27,11 +27,12 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 		os.Exit(1)
 	}
 
-	// Set AllUsersAuthorizationRights
+	// Set AllUsersAuthorizationRights and initial Hash-value
 	shared_code.AllowedUsersLoadFromJsonFile.AllUsersAuthorizationRights = &TestInstructionAndTestInstuctionContainerTypes.AllUsersAuthorizationRightsStruct{
 		AllUsersCanListAndViewTestCaseHavingTIandTICFromThisDomain:  true,
 		AllUsersCanBuildAndSaveTestCaseHavingTIandTICFromThisDomain: true,
 	}
+	shared_code.AllowedUsersLoadFromJsonFile.AllowedUsersHash = shared_code.InitialValueBeforeHashed
 
 	// Generate TestInstructions
 	// Standard::Xxxxxxx
