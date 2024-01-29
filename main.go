@@ -1,8 +1,8 @@
 package main
 
 import (
-	"FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers"
 	"fmt"
+	"github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers"
 )
 
 func main() {

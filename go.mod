@@ -1,4 +1,4 @@
-module FenixStandardTestInstructionAdmin
+module github.com/jlambert68/FenixStandardTestInstructionAdmin
 
 go 1.21
 
