@@ -27,7 +27,7 @@ const (
 	TestInstructionContainerColor_FenixStandard_StandardParallelBaseContainer                       TypeAndStructs.ColorType                        = "#AAAAAA"
 	TCRuleDeletion_FenixStandard_StandardParallelBaseContainer                                      TypeAndStructs.TCRuleDeletionType               = "TCRuleDeletion011"
 	TCRuleSwap_FenixStandard_StandardParallelBaseContainer                                          TypeAndStructs.TCRuleSwapType                   = "TCRuleSwap012"
-	TestInstructionContainerCreatingTimeStamp                                                       TypeAndStructs.UpdatedTimeStampType             = "2024-01-229 13:00:00"
+	TestInstructionContainerCreatingTimeStamp                                                       TypeAndStructs.UpdatedTimeStampType             = "2024-01-29 13:00:00"
 
 	// *** DropZone *** 'xxxxxxx'
 
