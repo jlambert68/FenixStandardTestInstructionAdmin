@@ -1,0 +1,15 @@
+package main
+
+import (
+	"FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers"
+	"fmt"
+)
+
+func main() {
+
+	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard()
+	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateAndVerifyRPCMessages()
+
+	fmt.Println(TestInstructionsAndTesInstructionContainersAndAllowedUsers.TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard)
+	fmt.Println("Success when generating and verifying all messages for TestInstructions, TestInstructionContainers and AllowedUsers")
+}

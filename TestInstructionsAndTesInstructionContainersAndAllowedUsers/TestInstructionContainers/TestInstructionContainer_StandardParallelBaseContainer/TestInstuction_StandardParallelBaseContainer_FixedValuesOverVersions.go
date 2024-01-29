@@ -1,0 +1,7 @@
+package TestInstructionContainer_StandardParallelBaseContainer
+
+import "github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+
+const (
+	TestInstructionContainerUUID_FenixStandard_StandardParallelBaseContainer TypeAndStructs.OriginalElementUUIDType = "7a570862-6104-489c-9fd0-a59904b463d0"
+)
