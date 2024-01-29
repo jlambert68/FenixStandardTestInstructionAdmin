@@ -27,6 +27,12 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 		os.Exit(1)
 	}
 
+	// Set AllUsersAuthorizationRights
+	shared_code.AllowedUsersLoadFromJsonFile.AllUsersAuthorizationRights = &TestInstructionAndTestInstuctionContainerTypes.AllUsersAuthorizationRightsStruct{
+		AllUsersCanListAndViewTestCaseHavingTIandTICFromThisDomain:  true,
+		AllUsersCanBuildAndSaveTestCaseHavingTIandTICFromThisDomain: true,
+	}
+
 	// Generate TestInstructions
 	// Standard::Xxxxxxx
 	//Xxxxxxx_v_1_0.Initate_TestInstruction_FenixStandard_Xxxxxxx()

@@ -17,6 +17,7 @@ func GenerateAndVerifyRPCMessages() {
 	// Worker Server - gRPC-message
 
 	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Worker version of the message
+	fmt.Println("Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Worker version of the message")
 	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage *fenixExecutionWorkerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage, err = shared_code.
 		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcWorkerMessage(string(DomainData.DomainUUID_FenixStandard),
@@ -27,6 +28,7 @@ func GenerateAndVerifyRPCMessages() {
 	}
 
 	// Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-Worker version of the message and check correctness of Hashes
+	fmt.Println("Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-Worker version of the message and check correctness of Hashes")
 	var testInstructionsAndTestInstructionContainersFromGrpcWorkerMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 	testInstructionsAndTestInstructionContainersFromGrpcWorkerMessage, err = shared_code.
 		GenerateStandardFromGrpcWorkerMessageForTestInstructionsAndUsers(
@@ -37,6 +39,7 @@ func GenerateAndVerifyRPCMessages() {
 	}
 
 	// Verify recreated Hashes from gRPC-Worker-message
+	fmt.Println("Verify recreated Hashes from gRPC-Worker-message")
 	var errorSliceWorker []error
 	errorSliceWorker = shared_code.VerifyTestInstructionAndTestInstructionContainerAndUsersMessageHashesAndDomain(
 		DomainData.DomainUUID_FenixStandard,
@@ -50,6 +53,7 @@ func GenerateAndVerifyRPCMessages() {
 
 	// Builder Server - gRPC-message
 	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Builder version of the message
+	fmt.Println("Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Builder version of the message")
 	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage *fenixTestCaseBuilderServerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage, err = shared_code.
 		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcBuilderMessage(string(DomainData.DomainUUID_FenixStandard),
@@ -60,6 +64,7 @@ func GenerateAndVerifyRPCMessages() {
 	}
 
 	// Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-Builder version of the message and check correctness of Hashes
+	fmt.Println("Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-Builder version of the message and check correctness of Hashes")
 	var testInstructionsAndTestInstructionContainersFromGrpcBuilderMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 	testInstructionsAndTestInstructionContainersFromGrpcBuilderMessage, err = shared_code.
 		GenerateStandardFromGrpcBuilderMessageForTestInstructionsAndUsers(
@@ -70,6 +75,7 @@ func GenerateAndVerifyRPCMessages() {
 	}
 
 	// Verify recreated Hashes from gRPC-Builder-message
+	fmt.Println("Verify recreated Hashes from gRPC-Builder-message")
 	var errorSliceBuilder []error
 	errorSliceBuilder = shared_code.VerifyTestInstructionAndTestInstructionContainerAndUsersMessageHashesAndDomain(
 		DomainData.DomainUUID_FenixStandard,
