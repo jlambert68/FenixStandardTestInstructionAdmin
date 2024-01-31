@@ -16,12 +16,12 @@ import (
 
 var TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 
-func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard() {
+func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard(allowedUsers []byte) {
 
 	var err error
 
-	// Load Allowed users from json-file
-	err = shared_code.ImportAllowedUsersFromFile()
+	// Load Allowed users from json-file (as []byte]
+	err = shared_code.ParseAllowedUsersFromEmbeddedFile(allowedUsers)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
