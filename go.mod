@@ -3,7 +3,7 @@ module github.com/jlambert68/FenixStandardTestInstructionAdmin
 go 1.21
 
 require (
-	github.com/jlambert68/FenixGrpcApi v0.0.0-20240129152625-acb237e2fb83
+	github.com/jlambert68/FenixGrpcApi v0.0.0-20240206073349-cebb83a4e270
 	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20240201113112-e465853d38bd
 )
 
