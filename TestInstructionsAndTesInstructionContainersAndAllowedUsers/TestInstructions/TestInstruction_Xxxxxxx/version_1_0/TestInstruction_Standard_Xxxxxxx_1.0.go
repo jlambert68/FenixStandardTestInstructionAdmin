@@ -2,7 +2,7 @@ package version_1_0
 
 import (
 	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods"
-	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 	"github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	"github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions"
 	fixedValuesOverVersions "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_Xxxxxxx"
@@ -78,7 +78,7 @@ func Initate_TestInstruction_FenixStandard_Xxxxxxx() *TestInstructionAndTestInst
 				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
 					ExpectedTestInstructionExecutionDurationInSeconds: 360,
 				},
-				FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{},
+				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct{},
 			},
 		},
 	}
@@ -176,7 +176,7 @@ func Initate_TestInstruction_FenixStandard_Xxxxxxx() *TestInstructionAndTestInst
 		TestInstruction_FenixStandard_Xxxxxxx.TestInstructionAttribute,
 		TestInstructionAttribute_FenixStandard_Xxxxxxx_ExpectedToBePassed)
 
-	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	// Add TestApiEngine relation for Attribute - 'ExpectedToBePassed'
 	// Nothing here
 
 	// TestInstruction Attribute - 'ServerIpAddress'
@@ -206,7 +206,7 @@ func Initate_TestInstruction_FenixStandard_Xxxxxxx() *TestInstructionAndTestInst
 		TestInstruction_FenixStandard_Xxxxxxx.TestInstructionAttribute,
 		TestInstructionAttribute_FenixStandard_Xxxxxxx_ServerIpAddress)
 
-	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	// Add TestApiEngine relation for Attribute - 'ExpectedToBePassed'
 	// Nothing here
 
 	// ImmatureElementModel - Xxxxxxx

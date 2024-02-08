@@ -1,15 +1,15 @@
 package LocalExecutionMethods
 
 import (
-	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 )
 
 // MethodsForLocalExecutionsStruct
 // Struct for holding all information of how to execute a TestInstruction
 // Even when there are no information about the methods this struct must exist
 type MethodsForLocalExecutionsStruct struct {
-	LocalParametersUsedInRunTime       *LocalParametersUsedInRunTimeStruct                                   `json:"LocalParametersUsedInRunTime"`
-	FangEngineClassesMethodsAttributes *FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct `json:"FangEngineClassesMethodsAttributes"`
+	LocalParametersUsedInRunTime          *LocalParametersUsedInRunTimeStruct                                         `json:"LocalParametersUsedInRunTime"`
+	TestApiEngineClassesMethodsAttributes *TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct `json:"TestApiEngineClassesMethodsAttributes"`
 }
 
 // LocalParametersUsedInRunTimeStruct
