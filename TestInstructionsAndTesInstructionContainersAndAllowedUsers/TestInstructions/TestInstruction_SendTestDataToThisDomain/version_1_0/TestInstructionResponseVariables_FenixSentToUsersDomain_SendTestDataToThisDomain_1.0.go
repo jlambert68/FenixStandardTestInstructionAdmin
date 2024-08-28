@@ -1,0 +1,22 @@
+package version_1_0
+
+import (
+	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
+	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+)
+
+const ()
+
+// TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain
+// Variable that holds the data for the TestInstructionResponseVariables
+var TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain map[TypeAndStructs.ResponseVariableUuidType]*TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct
+
+// Initate_TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain
+// Function that creates all data for the TestInstructionResponseVariables
+func Initate_TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain() {
+
+	// Initiate the TestInstructionResponseVariable
+	TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain = make(map[TypeAndStructs.ResponseVariableUuidType]*TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct)
+
+	return
+}

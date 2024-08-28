@@ -60,6 +60,11 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 							Deprecated:                          FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.Deprecated,
 							Enabled:                             FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
 						},
 					},
 					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
