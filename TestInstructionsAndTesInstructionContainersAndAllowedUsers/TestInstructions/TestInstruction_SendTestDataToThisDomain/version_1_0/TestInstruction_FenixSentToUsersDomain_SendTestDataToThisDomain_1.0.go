@@ -30,6 +30,7 @@ const (
 	TCRuleDeletion_FenixSentToUsersDomain_SendTestDataToThisDomain                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_FenixSentToUsersDomain_SendTestDataToThisDomain                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 	TestInstructionCreatingTimeStamp                                                  TypeAndStructs.UpdatedTimeStampType    = "2024-08-28 13:00:00"
+	ExpectedMaxTestInstructionExecutionDurationInSeconds                              int64                                  = 300
 
 	// Attribute - 'SendTestDataToThisExecutionDomain'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeUUIDType = "47bce83a-3b71-439f-8283-33d0e26d62d9" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisExecutionDomain
@@ -64,7 +65,7 @@ func Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain() *
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
 				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
-					ExpectedTestInstructionExecutionDurationInSeconds: 360,
+					ExpectedTestInstructionExecutionDurationInSeconds: ExpectedMaxTestInstructionExecutionDurationInSeconds,
 				},
 				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct{},
 			},
