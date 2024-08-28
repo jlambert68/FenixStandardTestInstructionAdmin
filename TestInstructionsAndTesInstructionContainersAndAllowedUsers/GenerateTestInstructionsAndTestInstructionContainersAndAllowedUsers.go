@@ -12,6 +12,9 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/shared_code"
 	"os"
 	"time"
+
+	FenixSentToUsersDomain_SendTestDataToThisDomain "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTestDataToThisDomain"
+	FenixSentToUsersDomain_SendTestDataToThisDomain_1_0 "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTestDataToThisDomain/version_1_0"
 )
 
 var TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
@@ -35,40 +38,35 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 	shared_code.AllowedUsersLoadFromJsonFile.AllowedUsersHash = shared_code.InitialValueBeforeHashed
 
 	// Generate TestInstructions
-	// Standard::Xxxxxxx
-	//Xxxxxxx_v_1_0.Initate_TestInstruction_FenixStandard_Xxxxxxx()
+	// FenixSentToUsersDomain::SendTestDataToThisDomain
+	FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain()
 
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
 		// TestInstructions
 		TestInstructions: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
-			TestInstructionsMap:  map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{},
+			TestInstructionsMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+
+				// TestInstruction 'FenixSentToUsersDomain_SendTestDataToThisDomain'
+				FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain: {
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+
+						// Version 'FenixSentToUsersDomain_SendTestDataToThisDomain_1_0'
+						{
+							TestInstructionInstance:             FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain,
+							TestInstructionInstanceMajorVersion: FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.MinorVersionNumber,
+							Deprecated:                          FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.Deprecated,
+							Enabled:                             FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstruction.Enabled,
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+						},
+					},
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
+				},
+			},
 			TestInstructionsHash: shared_code.InitialValueBeforeHashed,
 		},
-
-		/*
-					// TestInstruction 'Xxxxxxx'
-					Xxxxxxx.TestInstructionUUID_FenixStandard_Xxxxxxx: {
-						TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
-
-							// Version 'Xxxxxxx_1_0'
-							{
-								TestInstructionInstance:             Xxxxxxx_v_1_0.TestInstruction_FenixStandard_Xxxxxxx,
-								TestInstructionInstanceMajorVersion: Xxxxxxx_v_1_0.TestInstruction_FenixStandard_Xxxxxxx.TestInstruction.MajorVersionNumber,
-								TestInstructionInstanceMinorVersion: Xxxxxxx_v_1_0.TestInstruction_FenixStandard_Xxxxxxx.TestInstruction.MinorVersionNumber,
-								Deprecated:                          Xxxxxxx_v_1_0.TestInstruction_FenixStandard_Xxxxxxx.TestInstruction.Deprecated,
-								Enabled:                             Xxxxxxx_v_1_0.TestInstruction_FenixStandard_Xxxxxxx.TestInstruction.Enabled,
-								TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
-							},
-						},
-						TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
-					},
-				},
-				TestInstructionsHash: shared_code.InitialValueBeforeHashed,
-			},
-
-		*/
 
 		// TestInstructionContainers
 		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
