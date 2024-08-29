@@ -95,8 +95,8 @@ func Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain() *
 	TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.BasicTestInstructionInformation = &TypeAndStructs.BasicTestInstructionInformationStruct{
 		DomainUUID:                   DomainData.DomainUUID_FenixStandard,
 		DomainName:                   DomainData.DomainName_FenixStandard,
-		ExecutionDomainUUID:          DomainData.ExecutionDomainUUID_FenixStandard,
-		ExecutionDomainName:          DomainData.ExecutionDomainName_FenixStandard,
+		ExecutionDomainUUID:          DomainData.ExecutionDomainUUID_FenixSentToUsersDomain,
+		ExecutionDomainName:          DomainData.ExecutionDomainName_FenixSentToUsersDomain,
 		TestInstructionUUID:          TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
 		TestInstructionName:          TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
