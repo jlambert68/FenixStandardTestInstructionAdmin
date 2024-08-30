@@ -38,6 +38,13 @@ const (
 	TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain
 	TestInstructionAttributeDescription_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain   string                                          = "The Uuid of the ExecutionDomain that should receive the TestData"
 	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain string                                          = "The Uuid of the ExecutionDomain that should receive the TestData"
+
+	// Attribute - 'ChosenTestDataAsJsonString'
+	TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeUUIDType = "30afef1b-47be-4280-b0cc-d1a1276b5de0" //TestInstructionAttributeUUID_SubCustody_ChosenTestDataAsJsonString
+	TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeTypeName_StandardAttributes
+	TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixStandard_ExpectedToBePassed
+	TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString   string                                          = "TestData as a json string"
+	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString string                                          = "TestData as a json string"
 )
 
 var (
@@ -142,6 +149,36 @@ func Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain() *
 		TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain)
 
 	// Add TestApiEngine relation for Attribute - 'SendTestDataToThisExecutionDomain'
+	// Nothing here
+
+	// TestInstruction Attribute - 'ChosenTestDataAsJsonString'
+	var TestInstructionAttribute_FenixSentToUsersDomain_ChosenTestDataAsJsonString *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_FenixSentToUsersDomain_ChosenTestDataAsJsonString = &TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    DomainData.DomainUUID_FenixStandard,
+		DomainName:                                    DomainData.DomainName_FenixStandard,
+		TestInstructionUUID:                           TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionName:                           TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_FenixStandard_Standard,
+		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_FenixStandard_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               false,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             false,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".*",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+	}
+	TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute = append(
+		TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute,
+		TestInstructionAttribute_FenixSentToUsersDomain_ChosenTestDataAsJsonString)
+
+	// Add TestApiEngine relation for Attribute - 'ChosenTestDataAsJsonString'
 	// Nothing here
 
 	// ImmatureElementModel - SendTestDataToThisDomain

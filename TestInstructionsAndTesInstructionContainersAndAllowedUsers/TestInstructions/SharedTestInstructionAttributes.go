@@ -14,7 +14,7 @@ const (
 	TestInstructionAttributeTypeTypeName_FenixStandard_ExpectedToBePassed
 
 	TestInstructionAttributeTypeUUID_StandardAttributes TypeAndStructs.TestInstructionAttributeTypeUUIDType = "a0161997-4323-45a8-93fa-8ff7d64d1b7a"
-	TestInstructionAttributeTypeName_StandardAttributes TypeAndStructs.TestInstructionAttributeTypeNameType = "Standard Attributes"
+	TestInstructionAttributeTypeName_StandardAttributes TypeAndStructs.TestInstructionAttributeNameType     = "Standard Attributes"
 
 	// Attribute 'SendTestDataToThisDomain' is the parameter that is populated with values during runtime by the TestCaseBuilder-server.
 	// The values consists of a list of which Domains/ExecutionDomains that will receive the TestData
