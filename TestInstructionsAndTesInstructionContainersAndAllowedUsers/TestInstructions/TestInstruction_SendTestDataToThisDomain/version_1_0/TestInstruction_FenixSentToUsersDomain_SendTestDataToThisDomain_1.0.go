@@ -39,6 +39,20 @@ const (
 	TestInstructionAttributeDescription_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain   string                                          = "The Uuid of the ExecutionDomain that should receive the TestData"
 	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain string                                          = "The Uuid of the ExecutionDomain that should receive the TestData"
 
+	// Attribute - 'SendTestDataToThisDomainTextBox'
+	TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox          TypeAndStructs.TestInstructionAttributeUUIDType = "ce22da83-ff5e-4ecd-898c-71c1be43be82" //TestInstructionAttributeUUID_SubCustody_SendTestDataToThisDomainTextBox
+	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = "SendTestDataToThisDomainTextBox"
+	TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
+	TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox   string                                          = "The Domain the will receive the TestData"
+	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox string                                          = "The Domain the will receive the TestData"
+
+	// Attribute - 'SendTestDataToThisExecutionDomainTextBox'
+	TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeUUIDType = "df2a889c-59d1-45db-8f45-769a9914d40d" //TestInstructionAttributeUUID_SubCustody_SendTestDataToThisExecutionDomainTextBox
+	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = "SendTestDataToThisExecutionDomainTextBox"
+	TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
+	TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox   string                                          = "The ExecutionDomain the will receive the TestData"
+	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox string                                          = "The ExecutionDomain the will receive the TestData"
+
 	// Attribute - 'ChosenTestDataAsJsonString'
 	TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeUUIDType = "30afef1b-47be-4280-b0cc-d1a1276b5de0" //TestInstructionAttributeUUID_SubCustody_ChosenTestDataAsJsonString
 	TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeNameType = "ChosenTestDataAsJsonString"
@@ -149,6 +163,68 @@ func Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain() *
 		TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain)
 
 	// Add TestApiEngine relation for Attribute - 'SendTestDataToThisExecutionDomain'
+	// Nothing here
+
+	// TestInstruction Attribute - 'SendTestDataToThisDomainTextBox'
+	var TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisDomainTextBox *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisDomainTextBox = &TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                       DomainData.DomainUUID_FenixStandard,
+		DomainName:                                       DomainData.DomainName_FenixStandard,
+		TestInstructionUUID:                              TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionName:                              TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionAttributeUUID:                     TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox,
+		TestInstructionAttributeName:                     TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox,
+		TestInstructionAttributeDescription:              TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox,
+		TestInstructionAttributeMouseOver:                TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox,
+		TestInstructionAttributeTypeUUID:                 TestInstructions.TestInstructionAttributeTypeUUID_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeTypeName:                 TestInstructions.TestInstructionAttributeTypeName_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeValueAsString:            Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:                Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:                  true,
+		TestInstructionAttributeEnabled:                  false,
+		TestInstructionAttributeMandatory:                false,
+		TestInstructionAttributeVisibleInTestCaseArea:    false,
+		TestInstructionAttributeIsDeprecated:             false,
+		TestInstructionAttributeInputMask:                ".*",
+		TestInstructionAttributeType:                     TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisDomainTextBox,
+		TestInstructionAttributeComboBoxPredefinedValues: nil,
+	}
+	TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute = append(
+		TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute,
+		TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisDomainTextBox)
+
+	// Add TestApiEngine relation for Attribute - 'SendTestDataToThisDomainTextBox'
+	// Nothing here
+
+	// TestInstruction Attribute - 'SendTestDataToThisExecutionDomainTextBox'
+	var TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisExecutionDomainTextBox *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisExecutionDomainTextBox = &TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                       DomainData.DomainUUID_FenixStandard,
+		DomainName:                                       DomainData.DomainName_FenixStandard,
+		TestInstructionUUID:                              TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionName:                              TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionAttributeUUID:                     TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox,
+		TestInstructionAttributeName:                     TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox,
+		TestInstructionAttributeDescription:              TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox,
+		TestInstructionAttributeMouseOver:                TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox,
+		TestInstructionAttributeTypeUUID:                 TestInstructions.TestInstructionAttributeTypeUUID_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeTypeName:                 TestInstructions.TestInstructionAttributeTypeName_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeValueAsString:            Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:                Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:                  true,
+		TestInstructionAttributeEnabled:                  false,
+		TestInstructionAttributeMandatory:                false,
+		TestInstructionAttributeVisibleInTestCaseArea:    false,
+		TestInstructionAttributeIsDeprecated:             false,
+		TestInstructionAttributeInputMask:                ".*",
+		TestInstructionAttributeType:                     TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox,
+		TestInstructionAttributeComboBoxPredefinedValues: nil,
+	}
+	TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute = append(
+		TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute,
+		TestInstructionAttribute_FenixSentToUsersDomain_SendTestDataToThisExecutionDomainTextBox)
+
+	// Add TestApiEngine relation for Attribute - 'SendTestDataToThisExecutionDomainTextBox'
 	// Nothing here
 
 	// TestInstruction Attribute - 'ChosenTestDataAsJsonString'
