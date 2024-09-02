@@ -41,8 +41,8 @@ const (
 
 	// Attribute - 'ChosenTestDataAsJsonString'
 	TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeUUIDType = "30afef1b-47be-4280-b0cc-d1a1276b5de0" //TestInstructionAttributeUUID_SubCustody_ChosenTestDataAsJsonString
-	TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeTypeName_StandardAttributes
-	TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixStandard_ExpectedToBePassed
+	TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeNameType = "ChosenTestDataAsJsonString"
+	TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain
 	TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString   string                                          = "TestData as a json string"
 	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString string                                          = "TestData as a json string"
 )
@@ -154,25 +154,26 @@ func Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain() *
 	// TestInstruction Attribute - 'ChosenTestDataAsJsonString'
 	var TestInstructionAttribute_FenixSentToUsersDomain_ChosenTestDataAsJsonString *TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_FenixSentToUsersDomain_ChosenTestDataAsJsonString = &TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    DomainData.DomainUUID_FenixStandard,
-		DomainName:                                    DomainData.DomainName_FenixStandard,
-		TestInstructionUUID:                           TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
-		TestInstructionName:                           TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
-		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
-		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
-		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_FenixStandard_Standard,
-		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_FenixStandard_Standard,
-		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
-		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
-		TestInstructionAttributeVisible:               false,
-		TestInstructionAttributeEnabled:               true,
-		TestInstructionAttributeMandatory:             false,
-		TestInstructionAttributeVisibleInTestCaseArea: false,
-		TestInstructionAttributeIsDeprecated:          false,
-		TestInstructionAttributeInputMask:             ".*",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		DomainUUID:                                       DomainData.DomainUUID_FenixStandard,
+		DomainName:                                       DomainData.DomainName_FenixStandard,
+		TestInstructionUUID:                              TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionName:                              TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain,
+		TestInstructionAttributeUUID:                     TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeName:                     TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeDescription:              TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeMouseOver:                TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeTypeUUID:                 TestInstructions.TestInstructionAttributeTypeUUID_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeTypeName:                 TestInstructions.TestInstructionAttributeTypeName_FenixStandard_Standard_Hidden,
+		TestInstructionAttributeValueAsString:            Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:                Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:                  false,
+		TestInstructionAttributeEnabled:                  true,
+		TestInstructionAttributeMandatory:                false,
+		TestInstructionAttributeVisibleInTestCaseArea:    false,
+		TestInstructionAttributeIsDeprecated:             false,
+		TestInstructionAttributeInputMask:                ".*",
+		TestInstructionAttributeType:                     TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString,
+		TestInstructionAttributeComboBoxPredefinedValues: nil,
 	}
 	TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute = append(
 		TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain.TestInstructionAttribute,
