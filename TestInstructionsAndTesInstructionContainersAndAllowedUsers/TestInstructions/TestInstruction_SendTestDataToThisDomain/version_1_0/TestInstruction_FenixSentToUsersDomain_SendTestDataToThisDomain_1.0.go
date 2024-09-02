@@ -42,7 +42,7 @@ const (
 	// Attribute - 'ChosenTestDataAsJsonString'
 	TestInstructionAttributeUUID_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeUUIDType = "30afef1b-47be-4280-b0cc-d1a1276b5de0" //TestInstructionAttributeUUID_SubCustody_ChosenTestDataAsJsonString
 	TestInstructionAttributeName_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeNameType = "ChosenTestDataAsJsonString"
-	TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain
+	TestInstructionAttributeType_SendTestDataToThisDomain_ChosenTestDataAsJsonString          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeDescription_SendTestDataToThisDomain_ChosenTestDataAsJsonString   string                                          = "TestData as a json string"
 	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_ChosenTestDataAsJsonString string                                          = "TestData as a json string"
 )
