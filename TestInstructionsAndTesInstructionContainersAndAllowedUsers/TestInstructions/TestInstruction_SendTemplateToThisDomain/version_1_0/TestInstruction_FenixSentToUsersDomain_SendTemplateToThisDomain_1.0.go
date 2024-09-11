@@ -80,7 +80,8 @@ var (
 	TestInstructionAttributeComboBoxPredefinedValues_FenixOwnedSendTemplateToThisDomain_EmptyListForComboBox TypeAndStructs.TestInstructionAttributeComboBoxPredefinedValuesType
 
 	// Attribute - 'FenixOwnedSendRawTemplateComboBox'
-	TestInstructionAttributeComboBoxPredefinedValues_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendRawTemplateComboBoxValues = TypeAndStructs.TestInstructionAttributeComboBoxPredefinedValuesType{"", ""}
+	TestInstructionAttributeComboBoxPredefinedValues_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendRawTemplateComboBoxValues = TypeAndStructs.
+																	TestInstructionAttributeComboBoxPredefinedValuesType{"true", "false"}
 )
 
 // TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain

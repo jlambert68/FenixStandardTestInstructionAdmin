@@ -27,8 +27,8 @@ const (
 	// Attribute 'SendTesmplateToThisDomain' is the parameter that is populated with values during runtime by the TesterGui.
 	// The values consists of a list of which Domains/ExecutionDomains that will receive the Template
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisDomain TypeAndStructs.TestInstructionAttributeUUIDType = "9cb91956-fcbb-478b-91f4-8e455019f36a"
-	TestInstructionAttributeName_FenixSentToUsersDomain_SendTemplateToThisDomain TypeAndStructs.TestInstructionAttributeNameType = "FenixOwnedSendTemplateToThisDomain"
+	TestInstructionAttributeName_FenixSentToUsersDomain_SendTemplateToThisDomain TypeAndStructs.TestInstructionAttributeNameType = "Selected Template to send"
 	TestInstructionAttributeType_FenixSentToUsersDomain_SendTemplateToThisDomain TypeAndStructs.TestInstructionAttributeTypeType = "FENIX_OWNED_TESTER_GUI_INJECTED_COMBOBOX"
 
-	TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain TypeAndStructs.TestInstructionAttributeNameType = "SendToUserSpecifiedExecutionDomain"
+	TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain TypeAndStructs.TestInstructionAttributeNameType = "Send to user specified ExecutionDomain"
 )

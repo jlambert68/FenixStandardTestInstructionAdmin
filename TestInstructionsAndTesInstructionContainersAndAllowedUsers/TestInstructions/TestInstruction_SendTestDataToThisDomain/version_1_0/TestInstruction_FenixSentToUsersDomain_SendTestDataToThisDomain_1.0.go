@@ -34,7 +34,7 @@ const (
 
 	// Attribute - 'SendTestDataToThisExecutionDomain'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeUUIDType = "47bce83a-3b71-439f-8283-33d0e26d62d9" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisExecutionDomain
-	TestInstructionAttributeName_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTestDataToThisDomain
+	TestInstructionAttributeName_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain
 	TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain
 	TestInstructionAttributeDescription_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain   string                                          = "The UI friendly name of the ExecutionDomain that should receive the TestData"
 	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain string                                          = "The UI friendly name of the ExecutionDomain that should receive the TestData"
@@ -48,7 +48,7 @@ const (
 
 	// Attribute - 'SendTestDataToThisExecutionDomainTextBox'
 	TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeUUIDType = "df2a889c-59d1-45db-8f45-769a9914d40d" //TestInstructionAttributeUUID_SubCustody_SendTestDataToThisExecutionDomainTextBox
-	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain
+	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = "SendTestDataToThisDomainTextBox"
 	TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox   string                                          = "The ExecutionDomain the will receive the TestData"
 	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox string                                          = "The ExecutionDomain the will receive the TestData"
