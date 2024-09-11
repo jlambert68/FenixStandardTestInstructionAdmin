@@ -16,21 +16,21 @@ const (
 
 	// *************************************
 	// *** TestInstruction *** 'FenixOwnedSendTemplateToThisDomain'
-	TestInstructionUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_FenixSentToUsersDomain_SendTemplateToThisDomain
-	TestInstructionName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.TestInstructionNameType = "FenixOwnedSendTemplateToThisDomain"
-	TestInstructionTypeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                                                  = TestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_SendTemplate
-	TestInstructionTypeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                                                  = TestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_SendTemplate
-	TestInstructionDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain        string                                 = "This TestInstruction sends the used Template for the execution to ExecutionDomain"
-	TestInstructionMouseOverText_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain      string                                 = "This TestInstruction sends the used Template for the execution to ExecutionDomain"
-	TestInstructionDeprecated_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain         bool                                   = false
-	TestInstructionEnabled_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain            bool                                   = true
-	TestInstructionMajorVersionNumber_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain int                                    = 1
-	TestInstructionMinorVersionNumber_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain int                                    = 0
-	TestInstructionColor_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain              TypeAndStructs.ColorType               = "#fff000AA"
-	TCRuleDeletion_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
-	TCRuleSwap_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
-	TestInstructionCreatingTimeStamp                                                            TypeAndStructs.UpdatedTimeStampType    = "2024-08-28 13:00:00"
-	ExpectedMaxTestInstructionExecutionDurationInSeconds                                        int64                                  = 30
+	TestInstructionUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.OriginalElementUUIDType     = fixedValuesOverVersions.TestInstructionUUID_FenixSentToUsersDomain_SendTemplateToThisDomain
+	TestInstructionName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.TestInstructionNameType     = "FenixOwnedSendTemplateToThisDomain"
+	TestInstructionTypeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain           TypeAndStructs.TestInstructionTypeUUIDType = TestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
+	TestInstructionTypeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain           TypeAndStructs.TestInstructionTypeNameType = TestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
+	TestInstructionDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain        string                                     = "This TestInstruction sends the used Template for the execution to ExecutionDomain"
+	TestInstructionMouseOverText_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain      string                                     = "This TestInstruction sends the used Template for the execution to ExecutionDomain"
+	TestInstructionDeprecated_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain         bool                                       = false
+	TestInstructionEnabled_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain            bool                                       = true
+	TestInstructionMajorVersionNumber_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain int                                        = 1
+	TestInstructionMinorVersionNumber_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain int                                        = 0
+	TestInstructionColor_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain              TypeAndStructs.ColorType                   = "#fff000AA"
+	TCRuleDeletion_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                    TypeAndStructs.TCRuleDeletionType          = "TCRuleDeletion020"
+	TCRuleSwap_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain                        TypeAndStructs.TCRuleSwapType              = "TCRuleSwap020"
+	TestInstructionCreatingTimeStamp                                                            TypeAndStructs.UpdatedTimeStampType        = "2024-08-28 13:00:00"
+	ExpectedMaxTestInstructionExecutionDurationInSeconds                                        int64                                      = 30
 
 	// Attribute - 'FenixOwnedSendTemplateComboBox'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox          TypeAndStructs.TestInstructionAttributeUUIDType = "d69a87eb-c940-478c-a985-1087313320cd" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
@@ -41,15 +41,15 @@ const (
 
 	// Attribute - 'FenixOwnedSendTemplateReplacePlaceholersComboBox'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox        TypeAndStructs.TestInstructionAttributeUUIDType = "d69a87eb-c940-478c-a985-1087313320cd" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
-	TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox        TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTemplateToThisDomain
+	TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox        TypeAndStructs.TestInstructionAttributeNameType = "Replace Placeholder Values"
 	TestInstructionAttributeType_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox        TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
 	TestInstructionAttributeDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox string                                          = "Should the Placeholders and TestData be replaced by Fenix Backend"
 	TestInstructionAttributeMouseOver_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox   string                                          = "Should the Placeholders and TestData be replaced by Fenix"
 
 	// Attribute - 'FenixOwnedSendTemplateToThisExecutionDomainComboBox'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox          TypeAndStructs.TestInstructionAttributeUUIDType = "5de20bcf-701c-4f6f-bd96-ba6f4d721a69" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
-	TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox          TypeAndStructs.TestInstructionAttributeNameType = "Replace Placeholder Values"
-	TestInstructionAttributeType_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox          TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
+	TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain
+	TestInstructionAttributeType_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTestDataToThisDomain
 	TestInstructionAttributeDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox   string                                          = "The UI friendly of the ExecutionDomain that should receive the Template"
 	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox string                                          = "The UI friendly of the ExecutionDomain that should receive the Template"
 

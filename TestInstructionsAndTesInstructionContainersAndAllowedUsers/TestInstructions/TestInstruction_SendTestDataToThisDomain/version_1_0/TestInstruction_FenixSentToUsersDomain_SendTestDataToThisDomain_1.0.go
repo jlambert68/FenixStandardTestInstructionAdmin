@@ -16,21 +16,21 @@ const (
 
 	// *************************************
 	// *** TestInstruction *** 'SendTestDataToThisDomain'
-	TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain               TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain
-	TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain               TypeAndStructs.TestInstructionNameType = "SendTestDataToThisDomain"
-	TestInstructionTypeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain                                                  = TestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_SendTestDataUsedByExecution
-	TestInstructionTypeName_FenixSentToUsersDomain_SendTestDataToThisDomain                                                  = TestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_SendTestDataUsedByExecution
-	TestInstructionDescription_FenixSentToUsersDomain_SendTestDataToThisDomain        string                                 = "This TestInstruction sends the used TestData for the execution to ExecutionDomain"
-	TestInstructionMouseOverText_FenixSentToUsersDomain_SendTestDataToThisDomain      string                                 = "This TestInstruction sends the used TestData for the execution to ExecutionDomain"
-	TestInstructionDeprecated_FenixSentToUsersDomain_SendTestDataToThisDomain         bool                                   = false
-	TestInstructionEnabled_FenixSentToUsersDomain_SendTestDataToThisDomain            bool                                   = true
-	TestInstructionMajorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                    = 1
-	TestInstructionMinorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                    = 0
-	TestInstructionColor_FenixSentToUsersDomain_SendTestDataToThisDomain              TypeAndStructs.ColorType               = "#fff000AA"
-	TCRuleDeletion_FenixSentToUsersDomain_SendTestDataToThisDomain                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
-	TCRuleSwap_FenixSentToUsersDomain_SendTestDataToThisDomain                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
-	TestInstructionCreatingTimeStamp                                                  TypeAndStructs.UpdatedTimeStampType    = "2024-08-28 13:00:00"
-	ExpectedMaxTestInstructionExecutionDurationInSeconds                              int64                                  = 30
+	TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain               TypeAndStructs.OriginalElementUUIDType     = fixedValuesOverVersions.TestInstructionUUID_FenixSentToUsersDomain_SendTestDataToThisDomain
+	TestInstructionName_FenixSentToUsersDomain_SendTestDataToThisDomain               TypeAndStructs.TestInstructionNameType     = "SendTestDataToThisDomain"
+	TestInstructionTypeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain           TypeAndStructs.TestInstructionTypeUUIDType = TestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
+	TestInstructionTypeName_FenixSentToUsersDomain_SendTestDataToThisDomain           TypeAndStructs.TestInstructionTypeNameType = TestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
+	TestInstructionDescription_FenixSentToUsersDomain_SendTestDataToThisDomain        string                                     = "This TestInstruction sends the used TestData for the execution to ExecutionDomain"
+	TestInstructionMouseOverText_FenixSentToUsersDomain_SendTestDataToThisDomain      string                                     = "This TestInstruction sends the used TestData for the execution to ExecutionDomain"
+	TestInstructionDeprecated_FenixSentToUsersDomain_SendTestDataToThisDomain         bool                                       = false
+	TestInstructionEnabled_FenixSentToUsersDomain_SendTestDataToThisDomain            bool                                       = true
+	TestInstructionMajorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                        = 1
+	TestInstructionMinorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                        = 0
+	TestInstructionColor_FenixSentToUsersDomain_SendTestDataToThisDomain              TypeAndStructs.ColorType                   = "#fff000AA"
+	TCRuleDeletion_FenixSentToUsersDomain_SendTestDataToThisDomain                    TypeAndStructs.TCRuleDeletionType          = "TCRuleDeletion020"
+	TCRuleSwap_FenixSentToUsersDomain_SendTestDataToThisDomain                        TypeAndStructs.TCRuleSwapType              = "TCRuleSwap020"
+	TestInstructionCreatingTimeStamp                                                  TypeAndStructs.UpdatedTimeStampType        = "2024-08-28 13:00:00"
+	ExpectedMaxTestInstructionExecutionDurationInSeconds                              int64                                      = 30
 
 	// Attribute - 'SendTestDataToThisExecutionDomain'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisDomain_SendTestDataToThisExecutionDomain          TypeAndStructs.TestInstructionAttributeUUIDType = "47bce83a-3b71-439f-8283-33d0e26d62d9" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTestDataToThisExecutionDomain
@@ -48,7 +48,7 @@ const (
 
 	// Attribute - 'SendTestDataToThisExecutionDomainTextBox'
 	TestInstructionAttributeUUID_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeUUIDType = "df2a889c-59d1-45db-8f45-769a9914d40d" //TestInstructionAttributeUUID_SubCustody_SendTestDataToThisExecutionDomainTextBox
-	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = "SendTestDataToThisExecutionDomainTextBox"
+	TestInstructionAttributeName_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTestToUserSpecifiedExecutionDomain
 	TestInstructionAttributeType_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeDescription_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox   string                                          = "The ExecutionDomain the will receive the TestData"
 	TestInstructionAttributeMouseOverText_SendTestDataToThisDomain_SendTestDataToThisExecutionDomainTextBox string                                          = "The ExecutionDomain the will receive the TestData"
