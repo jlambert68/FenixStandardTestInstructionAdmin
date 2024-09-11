@@ -12,4 +12,7 @@ const (
 
 	TestInstructionTypeUUID_FenixSentToUsersDomain_SendTestDataUsedByExecution TypeAndStructs.TestInstructionTypeUUIDType = "a61351f6-c0a3-4687-b28c-b5442f580c9d"
 	TestInstructionTypeName_FenixSentToUsersDomain_SendTestDataUsedByExecution TypeAndStructs.TestInstructionTypeNameType = "SendTestDataUsedByExecution"
+
+	TestInstructionTypeUUID_FenixSentToUsersDomain_SendTemplate TypeAndStructs.TestInstructionTypeUUIDType = "41ffad55-e6c2-4cb8-8c89-eb35be4404b3"
+	TestInstructionTypeName_FenixSentToUsersDomain_SendTemplate TypeAndStructs.TestInstructionTypeNameType = "FenixOwnedSendTemplate"
 )

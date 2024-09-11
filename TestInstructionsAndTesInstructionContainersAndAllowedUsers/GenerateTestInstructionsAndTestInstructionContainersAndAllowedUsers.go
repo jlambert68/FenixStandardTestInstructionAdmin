@@ -15,6 +15,9 @@ import (
 
 	FenixSentToUsersDomain_SendTestDataToThisDomain "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTestDataToThisDomain"
 	FenixSentToUsersDomain_SendTestDataToThisDomain_1_0 "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTestDataToThisDomain/version_1_0"
+
+	FenixSentToUsersDomain_SendTemplateToThisDomain "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTemplateToThisDomain"
+	FenixSentToUsersDomain_SendTemplateToThisDomain_1_0 "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendTemplateToThisDomain/version_1_0"
 )
 
 var TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
@@ -41,6 +44,9 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 	// FenixSentToUsersDomain::SendTestDataToThisDomain
 	FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.Initate_TestInstruction_FenixSentToUsersDomain_SendTestDataToThisDomain()
 
+	// FenixSentToUsersDomain::FenixOwnedSendTemplateToThisDomain
+	FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.Initate_TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain()
+
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
@@ -62,6 +68,28 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixSt
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
 								ResponseVariablesMap:     FenixSentToUsersDomain_SendTestDataToThisDomain_1_0.TestInstructionResponseVariables_FenixSentToUsersDomain_SendTestDataToThisDomain,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
+						},
+					},
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
+				},
+
+				// TestInstruction 'FenixSentToUsersDomain_SendTestDataToThisDomain'
+				FenixSentToUsersDomain_SendTemplateToThisDomain.TestInstructionUUID_FenixSentToUsersDomain_SendTemplateToThisDomain: {
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+
+						// Version 'FenixSentToUsersDomain_SendTemplateToThisDomain_1_0'
+						{
+							TestInstructionInstance:             FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain,
+							TestInstructionInstanceMajorVersion: FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain.TestInstruction.MinorVersionNumber,
+							Deprecated:                          FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain.TestInstruction.Deprecated,
+							Enabled:                             FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstruction_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain.TestInstruction.Enabled,
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     FenixSentToUsersDomain_SendTemplateToThisDomain_1_0.TestInstructionResponseVariables_FenixSentToUsersDomain_SendTemplateToThisDomain,
 								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
 							},
 							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
