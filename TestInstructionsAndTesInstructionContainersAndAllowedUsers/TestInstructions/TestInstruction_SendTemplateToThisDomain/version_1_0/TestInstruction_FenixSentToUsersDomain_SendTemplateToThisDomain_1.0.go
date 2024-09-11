@@ -17,7 +17,7 @@ const (
 	// *************************************
 	// *** TestInstruction *** 'FenixOwnedSendTemplateToThisDomain'
 	TestInstructionUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.OriginalElementUUIDType     = fixedValuesOverVersions.TestInstructionUUID_FenixSentToUsersDomain_SendTemplateToThisDomain
-	TestInstructionName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.TestInstructionNameType     = "FenixOwnedSendTemplateToThisDomain"
+	TestInstructionName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain               TypeAndStructs.TestInstructionNameType     = "SendTemplateToDomain"
 	TestInstructionTypeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain           TypeAndStructs.TestInstructionTypeUUIDType = TestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
 	TestInstructionTypeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain           TypeAndStructs.TestInstructionTypeNameType = TestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_SendToUserSpecifiedExecutionDomain
 	TestInstructionDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain        string                                     = "This TestInstruction sends the used Template for the execution to ExecutionDomain"
@@ -33,11 +33,11 @@ const (
 	ExpectedMaxTestInstructionExecutionDurationInSeconds                                        int64                                      = 30
 
 	// Attribute - 'FenixOwnedSendTemplateComboBox'
-	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox          TypeAndStructs.TestInstructionAttributeUUIDType = "d69a87eb-c940-478c-a985-1087313320cd" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
+	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox          TypeAndStructs.TestInstructionAttributeUUIDType = "4aef7d32-cbde-4127-b615-57aec3b3b612" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
 	TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_FenixSentToUsersDomain_SendTemplateToThisDomain
 	TestInstructionAttributeType_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_FenixSentToUsersDomain_SendTemplateToThisDomain
-	TestInstructionAttributeDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox   string                                          = "The UI friendly of the ExecutionDomain that should receive the Template"
-	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox string                                          = "The UI friendly of the ExecutionDomain that should receive the Template"
+	TestInstructionAttributeDescription_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox   string                                          = "Chose Template from the list, to be sent to Connector"
+	TestInstructionAttributeMouseOverText_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox string                                          = "Chose Template from the list, to be sent to Connector"
 
 	// Attribute - 'FenixOwnedSendTemplateReplacePlaceholersComboBox'
 	TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox        TypeAndStructs.TestInstructionAttributeUUIDType = "d69a87eb-c940-478c-a985-1087313320cd" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_FenixSentToUsersDomain_SendTemplateToThisExecutionDomain
