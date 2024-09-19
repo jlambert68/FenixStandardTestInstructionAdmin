@@ -26,7 +26,7 @@ const (
 	TestInstructionEnabled_FenixSentToUsersDomain_SendTestDataToThisDomain            bool                                       = true
 	TestInstructionMajorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                        = 1
 	TestInstructionMinorVersionNumber_FenixSentToUsersDomain_SendTestDataToThisDomain int                                        = 0
-	TestInstructionColor_FenixSentToUsersDomain_SendTestDataToThisDomain              TypeAndStructs.ColorType                   = "#fff000AA"
+	TestInstructionColor_FenixSentToUsersDomain_SendTestDataToThisDomain              TypeAndStructs.ColorType                   = "#7A6907AA"
 	TCRuleDeletion_FenixSentToUsersDomain_SendTestDataToThisDomain                    TypeAndStructs.TCRuleDeletionType          = "TCRuleDeletion020"
 	TCRuleSwap_FenixSentToUsersDomain_SendTestDataToThisDomain                        TypeAndStructs.TCRuleSwapType              = "TCRuleSwap020"
 	TestInstructionCreatingTimeStamp                                                  TypeAndStructs.UpdatedTimeStampType        = "2024-08-28 13:00:00"
