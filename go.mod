@@ -6,7 +6,7 @@ toolchain go1.23.0
 
 require (
 	github.com/jlambert68/FenixGrpcApi v0.0.0-20241022175244-86f2f20991d4
-	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20241024074500-e94fe8404322
+	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20241024080234-e3febbebe27a
 )
 
 require (
