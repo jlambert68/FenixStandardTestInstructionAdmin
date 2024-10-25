@@ -57,7 +57,9 @@ func GenerateAndVerifyRPCMessages() {
 	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage *fenixTestCaseBuilderServerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage, err = shared_code.
 		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcBuilderMessage(string(DomainData.DomainUUID_FenixStandard),
-			TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard)
+			TestInstructionsAndTestInstructionContainersAndAllowedUsers_FenixStandard,
+			supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage.MessageSignatureData,
+		)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
